@@ -23,6 +23,7 @@ var cit = [
   "Я детектив с 45 летнем стажем ,но не могу найти свой нос на лице.",
   "Полетел на марс и осознал что там довольно холодно но вовремя спас космический мусор который вернул меня на корабль. Так что я считаю себе везучим."
 ];
+var cit2 = ["я еблан","я гений"," великий програмист","чуствую что подниму 20 кг","Не** все *****","чуствую себя вешалкой","все меня боятся","чуствую что ты ****"]
 function myFunction(){
     var randomIndex1 = Math.floor(Math.random() * cname.length);
     var RanName = cname[randomIndex1];
@@ -43,4 +44,17 @@ function myFunction(){
     var RanCit= cit[randomIndex4];
     let citata = document.getElementById('bio');
     citata.innerHTML = RanCit;
+
+    var randomIndex5 = Math.floor(Math.random() * cit2.length);
+    var RanCit2 = cit2[randomIndex5];
+    let rancitt2 = document.getElementById('cit');
+    rancitt2.innerHTML = "© "+RanCit2;
+
+    var randomIndex6 = Math.floor(Math.random() * 250) + 1;
+    let RanRost = document.getElementById('rost');
+    RanRost.innerHTML = " Рост: " +randomIndex6 +" см.";
+
+    var randomIndex7 = Math.floor(Math.random() * 250) + 1;
+    let RanVes = document.getElementById('ves');
+    RanVes.innerHTML = " Вес: " +randomIndex7 +" кг.";
 }
